@@ -15,3 +15,8 @@ ansible -i inventory servera.lab.example.com --list-hosts
 
 ansible -i inventory-group ungrouped --list-hosts
 
+grep "^\[" /etc/ansible/ansible.cfg
+
+ssh-keygen -lf {keyfilename}
+
+ansible servera.lab.example.com -m ping
