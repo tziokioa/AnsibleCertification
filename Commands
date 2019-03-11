@@ -3,3 +3,15 @@ virsh list
 rht-vmctl view {servername}
 
 ssh {servername} -l {username}
+
+yum list installed python
+
+rpm -q python
+
+sudo yum -y install ansible //y means answer yes
+
+Chapter2:
+ansible -i inventory servera.lab.example.com --list-hosts
+
+ansible -i inventory-group ungrouped --list-hosts
+
