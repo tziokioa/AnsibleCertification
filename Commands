@@ -20,3 +20,6 @@ grep "^\[" /etc/ansible/ansible.cfg
 ssh-keygen -lf {keyfilename}
 
 ansible servera.lab.example.com -m ping
+ansible servera.lab.example.com -a 'id'
+
+sudo -l
