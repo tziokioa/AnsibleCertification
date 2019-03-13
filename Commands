@@ -23,3 +23,7 @@ ansible servera.lab.example.com -m ping
 ansible servera.lab.example.com -a 'id'
 
 sudo -l
+
+rm -rvf myvhost/{defaults,vars,tests}
+mkdir -v roles; cd roles
+
